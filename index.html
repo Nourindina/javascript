@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+</head>
+<body>
+	<h3>calculator</h3>
+	<form name="calculator">
+		<input type="" name="display" readonly="">
+		<br><br>
+		<input type="button" name="sin" value="sin" onclick="addsin()">
+		<input type="button" name="cos" value="cos" onclick="addcos()">
+		<input type="button" name="tan" value="tan" onclick="addtan()">
+		<input type="button" name="clear" value="c" onclick="addclear()">
+		 <br><br>
+		<input type="button" name="ln" value="ln"  onclick="addln()">
+		<input type="button" name="logarithms" value="log" onclick="addlog()">
+		<input type="button" name="e" value="e" onclick="adde()">
+		<input type="button" name="parsent" value="%" onclick="addparsent()">
+		<br><br>
+		<input type="button" name="one" value="1" onclick="addone()">
+		<input type="button" name="two" value="2" onclick="addtwo()">
+		<input type="button" name="three" value="3" onclick="addthree()">
+		<input type="button" name="addition" value="+" onclick=" addplas()">
+		<br><br>
+		<input type="button" name="four" value="4" onclick="addfour()">
+		<input type="button" name="five" value="5" onclick="addfive()">
+		<input type="button" name="six" value="6" onclick="addsix()">
+		<input type="button" name="substraction" value="-" onclick="addminus()">
+		<br><br>
+		<input type="button" name="seven" value="7" onclick="addseven()">
+		<input type="button" name="eight" value="8" onclick="addeight()">
+		<input type="button" name="nine" value="9" onclick="addnine()">
+		<input type="button" name="equal" value="=" onclick="addequal()">
+		<br><br>
+		<input type="button" name="multiplication" value="*" onclick="addinto()">
+		<input type="button" name="zero" value="0" onclick="addzero()">
+		<input type="button" name="divition" value="/" onclick="addbi()">
+		<input type="button" name="pi" value="π" onclick="addpi()">
+
+	</form>
+	<script type="text/javascript">
+		function addsin(){
+			document.calculator.display.value+='sin';
+		}
+
+		function addcos(){
+			document.calculator.display.value+='cos';
+		}
+		function addtan(){
+			document.calculator.display.value+='tan';
+		}
+		function addclear(){
+			document.calculator.display.value="";
+		}
+	    function addln(){
+			document.calculator.display.value+='ln';
+		}
+		function addlog(){
+			document.calculator.display.value+='log';
+		}
+		function adde(){
+			document.calculator.display.value+="2.7182818285";
+		}
+		function addparsent(){
+			document.calculator.display.value+='%';
+		}
+		function addone(){
+			document.calculator.display.value+=1;
+		}
+		function addtwo(){
+			document.calculator.display.value+=2;
+		}
+		function addthree(){
+			document.calculator.display.value+=3;
+		}
+		function addplas(){
+			document.calculator.display.value+='+';
+		}
+		function addfour(){
+			document.calculator.display.value+=4;
+		}
+		function addfive(){
+			document.calculator.display.value+=5;
+		}
+		function addsix(){
+			document.calculator.display.value+=6;
+		}
+		function addminus(){
+			document.calculator.display.value+='-';
+		}
+		function addseven(){
+			document.calculator.display.value+=7;
+		}
+		function addeight(){
+			document.calculator.display.value+=8;
+		}
+		function addnine(){
+			document.calculator.display.value+=9;
+		}
+		function addequal(){
+			 var result= eval(document.calculator.display.value);
+			 document.calculator.display.value=result;
+		}
+		function addinto(){
+			document.calculator.display.value+='*';
+		}
+		function addzero(){
+			document.calculator.display.value+=0;
+		}
+		function addbi(){
+			document.calculator.display.value+='/';
+		}
+		function addpi(){
+			document.calculator.display.value+='3.1416';
+		}
+
+</script>
+
+</body>
+</html>
